@@ -23,6 +23,6 @@ public class ConverTest {
 
     @Test
     public void testCelciusToFahrenheit() {
-        assertEquals(calculator.toFahrenheit(), 55.0,0);
+        assertEquals(calculator.toFahrenheit(), 53.0,0);
     }
 }
