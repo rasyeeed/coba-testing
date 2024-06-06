@@ -1,22 +1,3 @@
-// import static org.junit.Assert.assertEquals;
-
-// import org.junit.Test;
-
-// import mkplproject.Convert;
-
-// public class ConvertTest {
-
-//     @Test
-//     public void testConvertToKelvin(){
-//         Convert toKelvin = new Convert(23);
-
-//         assertEquals(toKelvin.toKelvin(),296.15);
-//     }
-
-
-// }
-
-
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Before;
@@ -36,9 +17,12 @@ public class AppTest {
     }
 
     @Test
-    public void testAdd() {
-        double value = calculator.toKelvin();
+    public void testCelciusToKelvin() {
+        assertEquals(calculator.toKelvin(), 296.15,0);
+    }
 
-        assertEquals(value, 296.15,0);
+    @Test
+    public void testCelciusToFahrenheit() {
+        assertEquals(calculator.toFahrenheit(), 55.0,0);
     }
 }
